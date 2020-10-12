@@ -69,7 +69,21 @@
 
     <!-- If you add any new buttons, you need to update the javascript file, for
     corresponding button id, so that clicks of that button could be logged -->
+
+
     <div class="content-pane">
+      <div id="cart-wrapper">
+        <a onclick='navigateToCheckout()'>
+        <span id="cart" class="fa-stack fa-2x has-badge" data-count="0">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
+        </span> CART
+      </a>
+      </div>
+
+      <h3> <b>Value Cacti</b>  </h3>
+      <p> <i>A great cactus at a low price.</i> </p>
+
       <div class="vendor-wrapper" id="mp1">
         <img src="../static/coppercombo.png" class="vendor-photo" />
         <button class="vendor-book-button btn btn-primary" type="submit" id="mp1">
@@ -91,6 +105,11 @@
         </p>
       </div>
 
+      <hr/>
+
+      <h3> <b>Premium Cacti</b>  </h3>
+      <p><i> Take your cactus game to the next level.</i></p>
+
       <div class="vendor-wrapper" id="mp3">
         <img src="../static/garden.jpg" class="vendor-photo" />
         <button class="vendor-book-button btn btn-primary" type="submit" id="mp3">
@@ -111,14 +130,7 @@
         </p>
       </div>
 
-      <div id="cart-wrapper">
-        <a onclick='navigateToCheckout()'>
-        <span id="cart" class="fa-stack fa-2x has-badge" data-count="0">
-          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-          <i class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
-        </span> CART
-      </a>
-      </div>
+
     </div>
 
     <!-- DO NOT EDIT below this line!! -->
